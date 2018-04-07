@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> My Blog </title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+        <link rel="stylesheet" href="style.css" type="text/css" />
+    
+        <link rel="javascript" href="java.js" type="text/javascript" />
+		
+</head>
+<body onload="myFunction()">
+
+
+
+    <div class="header">
+        <h2>Terry's Blog</h2>
+    </div>
+
+    <div class="row">
+        <div class="leftcolumn">
+            <div class=" card" >
+			    <textarea id="myTextext" rows="15" cols="100"></textarea>
+				<input type="file" id="browse" name="fileupload" style="display: none" onChange="Handlechange();"/>
+                <input type="hidden" id="filename" readonly="true"/>
+				<input type="file" id="myFile" multiple size="50" onchange="myFunction()">
+				<p><strong>Tip:</strong> Use the Control or the Shift key to select multiple files.</p>
+				<button onclick="myFunction2()">Upload</button>
+				<input id="Delete" type="button" value="Delete" />
+                <p id="demo"></p>
+            </div>
+            <div class="card">
+                <h2>TITLE HEADING</h2>
+                <h5>Title description, April 7, 2018</h5>
+                <div class="img" style="height:200px;"><img src='images/pic1.png'></div>
+                <p>I had tried to watch Captain America again and I really like this movie very much. </p>
+                <p></p>
+            </div>
+            <div class="card">
+                <h2>Graduation Dinner</h2>
+                <h5>Graduation Night, July 18, 2017</h5>
+                <div class="img" style="height:200px;"><img src='images/pic5.jpg'></div>
+                <p></p>
+                <p></p>
+            </div>
+        </div>
+        <div class="rightcolumn">
+            <div class="card">
+                <h2>About Me</h2>
+                <p>My name is Heng Zi Cong, you can also call me Terry. I come form Malaysia and now study in UK. I am 20 years old.</p>
+            </div>
+            <div class="card">
+                <h3>Social Media</h3>
+                <div class="img"><a href="https://www.facebook.com/xjgx.terry">Facebook</div>
+                <div class='img'><a href="https://www.instagram.com/terry_heng/?hl=zh-tw">Instagram</div>
+            </div>
+            <div class="card">
+                <h3></h3>
+                <p></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <p id="demo"></p>
+    </div>
+
+</body>
+</html>
