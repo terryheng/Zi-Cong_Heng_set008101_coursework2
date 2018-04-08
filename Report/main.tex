@@ -1,0 +1,108 @@
+% #######################################
+% ########### FILL THESE IN #############
+% #######################################
+\def\mytitle{Coursework Report}
+\def\mykeywords{Fill, These, In, So, google, can, find, your, report}
+\def\myauthor{Zi Heng}
+\def\contact{40337723@napier.ac.uk}
+\def\mymodule{Mobile Applications Development (SET08114)}
+% #######################################
+% #### YOU DON'T NEED TO TOUCH BELOW ####
+% #######################################
+\documentclass[10pt, a4paper]{article}
+\usepackage[a4paper,outer=1.5cm,inner=1.5cm,top=1.75cm,bottom=1.5cm]{geometry}
+\twocolumn
+\usepackage{graphicx}
+\graphicspath{{./images/}}
+%colour our links, remove weird boxes
+\usepackage[colorlinks,linkcolor={black},citecolor={blue!80!black},urlcolor={blue!80!black}]{hyperref}
+%Stop indentation on new paragraphs
+\usepackage[parfill]{parskip}
+%% Arial-like font
+\usepackage{lmodern}
+\renewcommand*\familydefault{\sfdefault}
+%Napier logo top right
+\usepackage{watermark}
+%Lorem Ipusm dolor please don't leave any in you final report ;)
+\usepackage{lipsum}
+\usepackage{xcolor}
+\usepackage{listings}
+%give us the Capital H that we all know and love
+\usepackage{float}
+%tone down the line spacing after section titles
+\usepackage{titlesec}
+%Cool maths printing
+\usepackage{amsmath}
+%PseudoCode
+\usepackage{algorithm2e}
+
+\titlespacing{\subsection}{0pt}{\parskip}{-3pt}
+\titlespacing{\subsubsection}{0pt}{\parskip}{-\parskip}
+\titlespacing{\paragraph}{0pt}{\parskip}{\parskip}
+\newcommand{\figuremacro}[5]{
+    \begin{figure}[#1]
+        \centering
+        \includegraphics[width=#5\columnwidth]{#2}
+        \caption[#3]{\textbf{#3}#4}
+        \label{fig:#2}
+    \end{figure}
+}
+
+\lstset{
+	escapeinside={/*@}{@*/}, language=C++,
+	basicstyle=\fontsize{8.5}{12}\selectfont,
+	numbers=left,numbersep=2pt,xleftmargin=2pt,frame=tb,
+    columns=fullflexible,showstringspaces=false,tabsize=4,
+    keepspaces=true,showtabs=false,showspaces=false,
+    backgroundcolor=\color{white}, morekeywords={inline,public,
+    class,private,protected,struct},captionpos=t,lineskip=-0.4em,
+	aboveskip=10pt, extendedchars=true, breaklines=true,
+	prebreak = \raisebox{0ex}[0ex][0ex]{\ensuremath{\hookleftarrow}},
+	keywordstyle=\color[rgb]{0,0,1},
+	commentstyle=\color[rgb]{0.133,0.545,0.133},
+	stringstyle=\color[rgb]{0.627,0.126,0.941}
+}
+
+\thiswatermark{\centering \put(336.5,-38.0){\includegraphics[scale=0.8]{logo}} }
+\title{\mytitle}
+\author{\myauthor\hspace{1em}\\\contact\\Edinburgh Napier University\hspace{0.5em}-\hspace{0.5em}\mymodule}
+\date{}
+\hypersetup{pdfauthor=\myauthor,pdftitle=\mytitle,pdfkeywords=\mykeywords}
+\sloppy
+% #######################################
+% ########### START FROM HERE ###########
+% #######################################
+\begin{document}
+	\maketitle
+	
+	\section{Introduction}
+	\paragraph{}
+	In 21th century, internet has become much more popular than the previous generation. Internet is one of the things that for people's normal life. One of the things that people used internet for is writing their own blog for different usage such as for their own experience on a things, for sharing some delicious food that they have tried before and others.
+    \paragraph{}
+    The assignment that i have done is to build a blog platform. In the second part of the report, it will talk about the software design, what is the aim for this project and what feature that should be included in this project
+    
+	\section{Software Design}
+	\paragraph{}
+	 First, the aim of the assignment is to design a simple blog platform will comprise server and client elements.The client element which will present a user interface that enable at least one user to add, update, read and delete an existing blog post.
+	\paragraph{}
+	 Before I start working on my assignment, I have looking for different blog platform as example such as Blogger,  WordPress, Wix and others. At the end, I have design the layout of my asignment. The screen shot of my assignment will present on the next section of the report.
+
+	\section{Implementation}
+	\paragraph{}
+	The below picture is the screen shot of my project.
+	\figuremacro{h}{screenshot}{ImageTitle}{ - Screen Shot of Project }{1.0}
+	\paragraph{}
+	This is the second time I use HTML,CSS and JavaScript for my assignment. I think that I have done better then the previous assignment. I know that this is not the perfect website but i have don all my best in this project.
+	\section{Critical Evaluation}
+	\paragraph{}
+	Based on this project, there are a lot of things have to be improved such as the layout of the website can be more nicer and attractive so that others will interest on this website. It also can add some others features on this website like mp3 player so that people who visit this website can have a better mod on it.
+	
+	\section{Personal Evaluation}
+    \paragraph{}
+     For me, I have learn a lot of knowledge of HTML,CSS and also JavaScript when doing this assignment. I also do face plenty of challenge on it such as how to add the create, dread, update and delete (CRUD) API on the website. I do not think that I have manage to produce 100 percent of this assignment but I was manage to done it in the period that has been given by the lecturer.And for the next time I will improve my weakness during the next assignment.
+     
+	
+	
+ \bibliographystyle{ieeetr} 
+ \bibliography{references}
+\end{document}
